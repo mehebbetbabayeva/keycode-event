@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+   @include flex-center();
+    height: 100vh;
+    background-color: rgb(214, 203, 203);
+    .card{
+        width: 400px;
+        height: 80px;
+        @include flex-center();
+        background-color: white;
+    }
+   
+    .card-key{
+         width: 150px;
+         height: 80px;
+          margin-right: 20px;
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          p{
+            margin-bottom: 10px;
+          }
+        }
+    
+}
